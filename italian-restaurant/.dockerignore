@@ -1,0 +1,70 @@
+# Version control
+.git/
+.gitignore
+.gitattributes
+
+# Dependencies — installed inside each container
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment files (secrets — never ship)
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.example
+
+# Build artefacts — rebuilt inside container
+dist/
+client/dist/
+server/dist/
+build/
+.next/
+out/
+
+# Test & coverage
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+tests/
+test/
+
+# Documentation
+README.md
+LICENSE
+docs/
+*.md
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+*.err
+
+# Docker
+docker-compose*.yml
+Dockerfile*
+Makefile
+
+# TypeScript
+*.tsbuildinfo
+
+# Temp / cache
+.cache/
+.tmp/
+tmp/
+.pnp
+.pnp.js
